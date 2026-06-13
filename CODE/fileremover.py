@@ -5,8 +5,8 @@ import time
 home = os.path.expanduser("/")
 
 while True:
-    print("[F]ILE / [D]IR / [R]OOT DELETE [E TO EXIT]")
-    choice = input("CHOICE: ")
+    print("[F]ILE / [D]IR / [R]EMOVE ROOT / [E TO EXIT]")
+    choice = input("CHOICE: ").upper()
 
 
     if choice == "F":
