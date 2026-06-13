@@ -6,7 +6,7 @@ import time
 
 while True:
     print("[F]ILE OR [D]IR [E TO EXIT]")
-    choice = input("CHOICE: ")
+    choice = input("CHOICE: ").upper()
 
 
     if choice == "F":
