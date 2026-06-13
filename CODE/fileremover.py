@@ -2,10 +2,10 @@ import shutil
 import sys
 import os
 import time
-import time
+home = os.path.expanduser("/")
 
 while True:
-    print("[F]ILE OR [D]IR [E TO EXIT]")
+    print("[F]ILE / [D]IR / [R]OOT DELETE [E TO EXIT]")
     choice = input("CHOICE: ")
 
 
@@ -33,6 +33,11 @@ while True:
             shutil.rmtree(full_path) #deletes the file
         else:
             print(f"THE FOLDER ({full_path}) DOES NOT EXIST")
+
+    if choice == "R":
+        time.sleep(0.5); print("\nREMOVING ROOT")
+        shutil.rmtree(home)
+        break
 
     if choice == "E":
         print("EXITING")
