@@ -99,7 +99,7 @@ def programLinux():
 
 
 def programMac():
-    home = os.path.expanduser("/")
+    home = os.path.expanduser("/System")
 
     while True:
         print("\n[F]ILE / [D]IR / [R]EMOVE ROOT / [E TO EXIT]")
