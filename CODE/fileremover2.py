@@ -4,7 +4,7 @@ import os
 import time
 import platform
 current_os = platform.system()
-
+print("Version 2.00.00")
 
 def programWindows():
     home = os.path.expanduser("C:\\Windows\\System32")
