@@ -257,7 +257,7 @@ elif current_os == "haiku":
     programHaiku()
 
 if current_os in ["FreeBSD", "OpenBSD", "NetBSD"]:
-    print("BSD MACHINE DETECTED. PROGRAM WILL NOT RUN.")
+    print("BSD MACHINE DETECTED. PROGRAM FUNCTION: PARTIAL")
 
 if current_os not in ["Windows", "Darwin", "iOS", "Linux", "FreeBSD", "OpenBSD", "NetBSD"]:
     print("UNKNOWN OPERATING SYSTEM DETECTED. PROGRAM WILL NOT FUNCTION.")
