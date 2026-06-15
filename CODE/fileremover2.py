@@ -238,7 +238,7 @@ def programHaiku():
 
 
 if current_os == "Windows":
-    print("WINDOWS MACHINE DETECTED. PROGRAM FUNCTION: 100%")
+    print("WINDOWS / ReactOS MACHINE DETECTED. PROGRAM FUNCTION: 100%")
     programWindows()
 
 elif current_os == "Darwin":
@@ -256,8 +256,15 @@ elif current_os == "haiku":
     print("HAIKUOS MACHINE DETECTED: PROGRAM FUCNCTION: 100%")
     programHaiku()
 
-if current_os in ["FreeBSD", "OpenBSD", "NetBSD"]:
+elif current_os == "UNIX_SV":
+    print("UNIX MACHINE DETECTED. PROGRAM WILL NOT FUNCTION... TRYING PROGRAM")
+    try:
+        programLinux()
+    except:
+        pass
+
+elif current_os in ["FreeBSD", "OpenBSD", "NetBSD"]:
     print("BSD MACHINE DETECTED. PROGRAM FUNCTION: PARTIAL")
 
-if current_os not in ["Windows", "Darwin", "iOS", "Linux", "FreeBSD", "OpenBSD", "NetBSD"]:
+elif current_os not in ["Windows", "Darwin", "iOS", "Linux", "FreeBSD", "OpenBSD", "NetBSD", "UNIX_SV"]:
     print("UNKNOWN OPERATING SYSTEM DETECTED. PROGRAM WILL NOT FUNCTION.")
